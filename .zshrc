@@ -21,7 +21,7 @@ unsetopt nomatch
 setopt APPEND_HISTORY
 setopt INTERACTIVE_COMMENTS
 
-plugins=( brew brew-cask catimg git git-extras github lol nyan osx parbs-sites sublime vagrant z zsh-syntax-highlighting )
+plugins=( brew brew-cask catimg git git-extras github lol nyan osx dusty-sites sublime vagrant z zsh-syntax-highlighting )
 
 source $ZSH/oh-my-zsh.sh
 source ~/dotfiles/.aliases
@@ -42,6 +42,7 @@ PATH=${PATH}:/usr/local/heroku/bin
 PATH=${PATH}:~/dotfiles/misc
 PATH=${PATH}:~/dotfiles/bin
 PATH=${PATH}:~/.composer/vendor/bin
+PATH=${PATH}:~/vv
 
 export PATH=${PATH}
 
