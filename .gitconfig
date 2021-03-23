@@ -13,7 +13,7 @@
     github = dustyf
 [core]
 	editor = vim
-	excludesfile = ~/dotfiles/.global_ignore
+	excludesfile = /Users/dusty/.gitignore_global
 
     # Enable parallel I/O for operations like "git diff".
     preloadindex = true
@@ -107,3 +107,11 @@
 
 [advice]
 	statusHints = false
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[commit]
+	template = /Users/dusty/.stCommitMsg
